@@ -25,12 +25,20 @@ import javax.swing.JOptionPane;
 
 public class myClass {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
+		
+		System.out.println( "Initalizing") ;
+		System.out.println( "Creating systems") ;
+		System.out.println( "...") ;
+		System.out.println( "Systems Created") ;
+		System.out.println( "Hello user, what do you need?") ;
+		
 		//Presents window to display the user options, stores in a 'UserOption' string variable
 		int userOption = Integer.parseInt(JOptionPane.showInputDialog(null, "What home system would you like to control?\n"
 				+ "1.Lights\n" + "2.Doors\n" + "3.Spotify\n" + "4.Cameras\n" + " 5.Toaster\n" + "6.Oven\n" + "7.Exit\n"));
 		
+		
+//my thoughts are that we can make the bottom a switch, to keep it simple.
 		if (userOption == 1)
 		{
 		lights.main(args);
